@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 350px;
+    padding: 140px 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+}
+
+.input {
+    margin-bottom: 14px;
+    padding-left: 24px;
+    border: 1px solid #e5e5e7;
+    border-radius: 3px;
+    width: 100%;
+    height: 44px;
+    -webkit-box-shadow: inset 0 0 0 50px #fff;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #178056;
+}
+
+
+.button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    background: #fff;
+    border: none;
+    width: 52px;
+    height: 40px;
+    cursor: pointer;
+}
