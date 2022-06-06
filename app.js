@@ -2,16 +2,18 @@ const form = document.getElementById("form");
 const input = document.getElementById("input");
 const result = document.getElementById("result");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const isValid = validation(input);
-
-    if (isValid) {
-      let val = input.value.replace(/\s/g, '').split(',').map((string) => parseInt(string));
-
-      result.textContent = sumOfTwoLowestNumbers(val);
-    }
-});
+if (form) {
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const isValid = validation(input);
+    
+        if (isValid) {
+          let val = input.value.replace(/\s/g, '').split(',').map((string) => parseInt(string));
+    
+          result.textContent = sumOfTwoLowestNumbers(val);
+        }
+    });
+}
 
 function sumOfTwoLowestNumbers(array) {
     let lowestItem = Infinity;
@@ -50,3 +52,5 @@ function validation(input) {
   }
   return true;
 }
+
+module.exports = sumOfTwoLowestNumbers;

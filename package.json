@@ -1,0 +1,32 @@
+{
+  "name": "byndyusoft",
+  "version": "1.0.0",
+  "description": "byndyusoft test",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalavs/byndyusoft.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "unit",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lalavs/byndyusoft/issues"
+  },
+  "homepage": "https://github.com/lalavs/byndyusoft#readme",
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0"
+  },
+  "jest":{
+    "testEnvironment": "jsdom"
+  }
+}
